@@ -1,0 +1,290 @@
+.b-header
+    &__box-img1
+        position: relative
+        +lg
+            margin-top: 200px
+        +md
+            margin-top: 10px
+        +sm
+            position: static
+            width: 100%
+    &__img-1
+        max-width: 60%
+        position: absolute
+        left: 150px
+        top: 200px
+        +lg
+            top: 150px
+        +md
+            top: 180px
+            left: 200px
+        +sm
+            max-width: 40%  
+            top: 350px
+            left: 400px
+        +xs
+            display: none
+    &__img-2
+        max-width: 60%
+        +lg
+            max-width: 70%
+        +sm
+            max-width: 50%  
+        +xs
+            position: static
+            display: block
+            max-width: 100%
+            margin-left: auto
+            margin-right: auto
+        
+    &__img-3
+        max-width: 26%
+        position: absolute
+        right: 45px
+        top: 40px
+        +lg
+            right: -20px
+            max-width: 30%
+        +md
+            top: 0
+        +xs
+            display: none
+    &__item
+        padding-top: 50px
+        +md
+            padding-top: 200px
+        +sm
+            padding-top: 50px
+    &__item-title 
+        color: #4fc1e9
+        margin-bottom: 15px
+    &__text-top
+        padding-top: 20px
+        font-weight: bold
+        color: #4fc1e9
+
+    &__item-text
+        display: inline-block
+    &__item-desc
+        padding-top: 20px
+    &__nav
+        display: inline-block
+        margin-top: 10px
+        ul
+            list-style-type: none
+            padding: 0
+            li
+                display: inline-block
+                margin-right: 10px
+                a
+                    color: #4fc1e9
+                    &:hover
+                        color: #000000
+    &__top
+        margin-top: 50px
+    &__top-item
+        margin-top: 70px
+    &__top-title
+        margin-top: 100px
+        margin-bottom: 50px
+    &__team-bg
+        background: url("../img/team-1.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-1
+        background: url("../img/team-2.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-2
+        background: url("../img/team-3.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-3
+        background: url("../img/team-4.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-4
+        background: url("../img/team-5.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-5
+        background: url("../img/team-6.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-6
+        background: url("../img/team-7.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-7
+        background: url("../img/team-8.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team-bg-8
+        background: url("../img/team-9.jpg") no-repeat center
+        width: 100%
+        height: 400px
+        background-size: cover
+    &__team
+        color: #000000
+        &:hover
+            color: #000000
+        +sm
+            margin-bottom: 50px
+    &__team-title
+        padding-top: 25px
+        font-size: 20px 
+        color: #000000
+    &__team-desc
+        &:after
+            content: ""
+            display: block
+            width: 40px
+            height: 2px
+            background: #4fc1e9
+            margin: 20px 0
+    &__logo
+        max-width: 200px    
+    &__prev
+        position: absolute
+        left: -30px
+        top: 15px
+        +sm
+            left: 100px
+            top: 70px
+        +xs
+            top: 80px
+    &__next
+        position: absolute
+        right: -20px
+        top: 15px
+        +sm
+            right: 100px
+            top: 70px
+        +xs
+            top: 80px
+    &__icons
+        &:hover
+            color: #4fc1e9
+    &__nav-img
+        width: 80%
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &__tab-content
+        margin-top: 50px
+   
+    &__nav-title
+        font-size: 22px
+    &__nav-text
+        color: #000000
+        font-size: 16px
+        padding-top: 10px
+    &__box-img
+        width: 90%
+    &__item-box--top
+        margin-top: 20%
+    &__item-box--bottom
+        margin-top: 18%
+    &__item-box--left
+        margin-top: 25%
+    &__item-box--center
+        margin-top: 7%
+    &__item-box
+        margin-top: 2%
+    &__color
+        color: #4fc1e9
+    &__input
+        display: block
+        width: 100%
+        border: 1px solid #aab2bd
+        font-size: 18px
+        padding: 10px
+        border-radius: 2px 
+        margin-bottom: 20px
+        margin-top: 20px
+        &::placeholder
+            font-size: 18px
+        &:focus
+           border: 1px solid #4fc1e9
+    &__btn
+        outline: none
+        padding: 15px 35px
+        border: none
+        font-size: 16px
+        margin-top: 25px
+        color: #ffffff
+        display: block
+        background-color: #4fc1e9
+        &:hover
+            background-color: #000000
+    &__area
+        margin-top: 5px
+        border-radius: 2px
+        font-size: 16px
+        width: 100%
+        height: 150px
+        padding: 10px
+
+        &::placeholder
+            font-size: 18px
+        &:focus
+           border: 1px solid #4fc1e9
+    &__select
+        margin-top: 20px
+        width: 50%
+        display: block
+        font-size: 18px
+        padding: 7px 5px
+    &__box-form
+        margin-top: 100px
+    &__box-title
+        font-size: 30px
+        color: #000000
+    &__box-text
+        font-size: 15px
+        color: #000000
+    &__box-icon
+        margin-top: 20px
+        ul
+            list-style-type: none
+            padding: 0
+            li
+                display: inline-block
+                margin-right: 10px
+                a
+                    font-size: 25px
+
+.active
+    border: none !important
+    color: #4fc1e9
+    width: 100%
+   
+   
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+    color: #4fc1e9 !important
+    border-bottom: 1px solid #4fc1e9 !important
+    width: 100% !important
+
+    
+.nav-tabs
+    border: none !important
+
+
+.nav-tabs .nav-link
+    border: none !important
+    &:hover
+        color: #4fc1e9
+.nav-link
+    padding-left: 0 !important
+
+.nav-item
+    color: #000000
+

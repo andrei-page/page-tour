@@ -4,7 +4,7 @@ block first-line
 doctype html
 html(lang='en')
 	head
-		title Журнал | The haze
+		title Сообщество | Туры от И
 		meta(name="description" content="")
 		include ../inc/head
 	body
@@ -17,9 +17,36 @@ html(lang='en')
 			|
 			|
 			include ../inc/footer
-		
+			
 		block scripts
 			script(src='js/main.js')
+			
 			script(src='https://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha256-251s88HEsEfGL2RufZmRwGohKTHDYr9T+aJAazDwlGY=" crossorigin="anonymous"></script>
 			script(defer='', src='https://use.fontawesome.com/releases/v5.0.6/js/all.js')
 			script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+			script.
+				$('#carouselOne').owlCarousel({
+					items: 5,
+					loop:false,
+					nav:true,
+					dots:false,
+					touchDrag: true,
+					navText: [$('.b-header__prev'),$('.b-header__next')],
+					responsive:{
+							200:{
+								items:2,
+							},
+						 	400:{
+								items:3,
+							},
+							600:{
+								items:4,
+							},
+							
+							1400:{
+								items:5,
+							}
+					}
+				});
+			
